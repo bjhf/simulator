@@ -1,4 +1,6 @@
 from simulator import *
+from random import random
+from math import floor
 
 _logger = logger.get_logger(__name__)
 
@@ -6,7 +8,7 @@ def main():
     _logger.info("Blackjack Hall of Fame - Version 0.1")
     house_rules = HouseRules(
         decks_in_shoe=6,
-        shuffle_mode=ShuffleMode.NO_SHUFFLE,
+        shuffle_mode=ShuffleMode.FISHER_YATES,
         dealer_hit_mode=DealerHitMode.ON_SIXTEEN
     )
     game = Game(house_rules)
