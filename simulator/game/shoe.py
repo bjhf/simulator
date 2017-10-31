@@ -1,13 +1,14 @@
-from math import floor
-import simulator
 from itertools import product
-from .enum import *
-from .util import print_cards
 from random import random
+
+from math import floor
+
+import simulator
+from simulator.util.enum import *
 
 
 class Shoe:
-    _logger = simulator.logger.get_logger(__name__)
+    _logger = simulator.util.logger.get_logger(__name__)
     _decks_in_shoe = None
     _shuffle_mode = None
     _cut_card_position = None

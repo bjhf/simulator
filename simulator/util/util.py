@@ -1,4 +1,4 @@
-from .enum import *
+from simulator.util.enum import *
 
 
 def get_card_text(card):

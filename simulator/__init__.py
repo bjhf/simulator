@@ -1,4 +1,3 @@
-from .logger import *
-from .game import Game
-from .houserules import HouseRules
-from .enum import *
+from simulator.ai import *
+from simulator.game import *
+from simulator.util import *

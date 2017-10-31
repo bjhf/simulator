@@ -1,6 +1,18 @@
 from enum import Enum, Flag, auto
 
 
+class DoubleRestrictions(Enum):
+    NONE = auto()
+
+class DoubleAfterSplit(Enum):
+    ALLOWED = auto()
+    NOT_ALLOWED = auto()
+
+class AcesSplitLimit(Enum):
+    ONCE = auto()
+    TWICE = auto()
+    THRICE = auto()
+
 class ShuffleMode(Enum):
     NO_SHUFFLE = auto()
     FISHER_YATES = auto()
